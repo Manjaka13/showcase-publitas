@@ -1,0 +1,15 @@
+.footer {
+    width: 100%;
+    background: $color-bg;
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px $color-bg;
+
+    &__copyright {
+        text-align: center;
+        color: rgb(117, 117, 117);
+
+        .heart {
+            color: $color-theme;
+        }
+    }
+}

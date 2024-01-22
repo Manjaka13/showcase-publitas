@@ -64,6 +64,10 @@ a {
 	text-decoration: none;
 	color: $color-theme;
 	cursor: pointer;
+
+	&:hover {
+		color: $color-theme2;
+	}
 }
 
 p {
