@@ -4,6 +4,7 @@ import { Navigation } from "@/components/Navigation";
 import "@/helpers/icons";
 import LOGO from "@/images/favicon.png";
 import { Footer } from "@/components/Footer";
+import { Cover } from "@/components/Cover";
 
 /**
  * Entry point
@@ -18,6 +19,7 @@ const Index = () => (
 		</Helmet>
 		<main>
 			<Navigation />
+			<Cover />
 			<div className="container">
 				<p>
 					Esse veniam culpa officia in consectetur. Eiusmod cillum et officia elit

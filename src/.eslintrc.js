@@ -8,5 +8,6 @@ module.exports = {
 	},
 	rules: {
 		"no-tabs": 0,
+		curly: 0,
 	},
 };

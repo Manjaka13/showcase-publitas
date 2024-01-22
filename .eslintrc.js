@@ -3,5 +3,6 @@ module.exports = {
 	extends: ["@modern-js"],
 	rules: {
 		"no-tabs": 0,
+		curly: 0,
 	},
 };

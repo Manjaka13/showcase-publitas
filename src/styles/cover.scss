@@ -1,0 +1,64 @@
+.cover {
+    width: 100%;
+    height: calc(100vh - $navbar-size);
+    overflow: hidden;
+    background: $color-bg3;
+
+    &--0 {
+        background: url(@/images/0.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    &--1 {
+        background: url(@/images/1.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    &--2 {
+        background: url(@/images/2.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    &--3 {
+        background: url(@/images/3.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    &--4 {
+        background: url(@/images/4.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        @include flex-col(center, center);
+        height: 100%;
+    }
+
+    &__time {
+        @include flex-row(initial, center);
+        text-align: center;
+        font-size: 100px;
+        color: white;
+        text-shadow: 1px 1px 3px black;
+    }
+
+    &__date {
+        color: white;
+        text-shadow: 1px 1px 3px black;
+    }
+
+    &__divider {
+        width: 40%;
+        height: 3px;
+        border-radius: 3px;
+        background: white;
+        box-shadow: 1px 1px 3px black;
+        margin: 20px 0;
+    }
+
+    &__greeting {
+        font-size: 23px;
+        color: rgb(212, 212, 212);
+        text-shadow: 1px 1px 3px black;
+    }
+}
