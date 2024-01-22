@@ -62,6 +62,7 @@ a {
 	@include transition;
 	text-decoration: none;
 	color: $color-theme;
+	cursor: pointer;
 }
 
 p {

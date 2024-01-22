@@ -2,11 +2,28 @@
 	@include flex-row(initial, center);
 
 	&__item {
-		@include transition;
-		color: #a0a0a0;
-		padding: 10px 15px;
+		margin-left: 10px;
 
-		&:hover {
+		.link {
+			color: #a0a0a0;
+			padding: 10px 15px;
+			border-radius: 5px;
+
+			&:hover {
+				color: white;
+				background: $color-bg3;
+			}
+		}
+
+		&:last-child {
+			.link {
+				background: $color-theme;
+				color: white;
+
+				&:hover {
+					background: $color-theme2;
+				}
+			}
 		}
 	}
 }
