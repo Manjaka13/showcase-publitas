@@ -1,0 +1,114 @@
+/**
+ * Global classes and overrides
+ */
+
+* {
+    box-sizing: border-box;
+    font-family: $font-regular;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+html,
+body,
+#root,
+main {
+    min-height: calc(100vh - $navbar-size);
+}
+
+body {
+    background: $color-bg2;
+    width: 100%;
+}
+
+html,
+body,
+figure,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a,
+p,
+button,
+li,
+input,
+textarea,
+label,
+select {
+    font-family: $font-regular;
+    font-size: $fs-p;
+    color: $color-p;
+
+    @include screen-x(300px) {
+        font-size: 1em;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    @include bold;
+    @include transition;
+    text-decoration: none;
+    color: $color-theme;
+}
+
+p {
+    text-align: justify;
+    line-height: $line-height;
+    user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: $line-height;
+    color: $color-title;
+    user-select: none;
+}
+
+h1 {
+    font-size: $fs-h1;
+}
+
+h2 {
+    font-size: $fs-h2;
+}
+
+h3 {
+    font-size: $fs-h3;
+}
+
+h4 {
+    font-size: $fs-h4;
+}
+
+h5 {
+    font-size: $fs-h5;
+}
+
+.bold {
+    @include bold;
+}
+
+.regular {
+    font-family: $font-regular;
+    font-weight: normal;
+}
+
+.theme {
+    color: $color-theme;
+}
