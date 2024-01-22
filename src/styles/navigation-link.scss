@@ -1,0 +1,12 @@
+.navigation-link {
+	@include flex-row(initial, center);
+
+	&__item {
+		@include transition;
+		color: #a0a0a0;
+		padding: 10px 15px;
+
+		&:hover {
+		}
+	}
+}

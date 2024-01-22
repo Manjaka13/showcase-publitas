@@ -1,0 +1,61 @@
+/**
+ * Navigation bar
+ */
+
+.navigation {
+	@include flex-row(space-between, center);
+	width: 100%;
+	height: $navbar-size;
+	background: $color-bg;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 13;
+	box-shadow: 0px 0px 10px $color-bg;
+	padding: 0 40px;
+
+	&__title {
+		@include flex-row(initial, center);
+		position: relative;
+
+		.icon-box {
+			@include flex-row(center, center);
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background: $color-bg1;
+			color: $color-theme;
+			margin-right: 10px;
+			animation: 1.5s animation-heartbeat forwards infinite;
+
+			@keyframes animation-heartbeat {
+				from {
+					font-size: 20px;
+					transform: rotate(2deg);
+				}
+
+				to {
+					font-size: 30px;
+					transform: rotate(0deg);
+				}
+			}
+		}
+
+		.title {
+			font-size: $fs-h4;
+			color: white;
+		}
+
+		.wonderland {
+			color: $color-theme2;
+		}
+
+		.star {
+			font-size: 15px;
+			position: absolute;
+			top: 0;
+			right: -20px;
+			color: white;
+		}
+	}
+}

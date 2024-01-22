@@ -1,9 +1,9 @@
-import { appTools, defineConfig } from '@modern-js/app-tools';
+import { appTools, defineConfig } from "@modern-js/app-tools";
 
 // https://modernjs.dev/en/configure/app/usage
 export default defineConfig({
-  runtime: {
-    router: true,
-  },
-  plugins: [appTools()],
+	runtime: {
+		router: true,
+	},
+	plugins: [appTools()],
 });

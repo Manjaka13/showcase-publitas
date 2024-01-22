@@ -5,16 +5,16 @@ import { NavigationLinkType } from "@/components/NavigationLinks";
  */
 
 export const NAVIGATION_LINKS: NavigationLinkType[] = [
-  {
-    title: "My work",
-    icon: "wrench",
-  },
-  {
-    title: "Contacts",
-    icon: "envelope",
-  },
-  {
-    title: "Get my resume",
-    icon: "download",
-  },
+	{
+		title: "My work",
+		icon: "wrench",
+	},
+	{
+		title: "Contacts",
+		icon: "envelope",
+	},
+	{
+		title: "Get my resume",
+		icon: "download",
+	},
 ];
