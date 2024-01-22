@@ -2,6 +2,7 @@ import { Helmet } from "@modern-js/runtime/head";
 import "@/styles/main.scss";
 import { Navigation } from "@/components/Navigation";
 import "@/helpers/icons";
+import LOGO from "@/images/favicon.png";
 
 /**
  * Entry point
@@ -10,11 +11,9 @@ import "@/helpers/icons";
 const Index = () => (
 	<div className="container-box">
 		<Helmet>
-			<link
-				rel="icon"
-				type="image/x-icon"
-				href="https://lf3-static.bytednsdoc.com/obj/eden-cn/uhbfnupenuhf/favicon.ico"
-			/>
+			<meta charSet="utf-8" />
+			<title>Hari work showcase</title>
+			<link rel="icon" type="image/x-icon" href={LOGO} />
 		</Helmet>
 		<main>
 			<Navigation />
