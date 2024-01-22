@@ -13,7 +13,7 @@ export const Navigation = (): JSX.Element => (
 					<FontAwesomeIcon icon="heart" />
 				</div>
 				<h1 className="title regular">
-					Hari in <span className="wonderland">Wonderland</span>
+					Welcome to <span className="wonderland">Wonderland</span>
 					<FontAwesomeIcon className="star" icon="star-and-crescent" />
 				</h1>
 			</div>
