@@ -29,3 +29,28 @@ export const GREETINGS: string[] = [
 	"Let's take a break to appreciate the sunset",
 	"I should go to bed at this time...",
 ];
+
+export const DAYS: string[] = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday",
+];
+
+export const MONTHS: string[] = [
+	"Jan",
+	"Feb",
+	"Mar",
+	"Apr",
+	"Mai",
+	"Jun",
+	"Jul",
+	"Aog",
+	"Sept",
+	"Oct",
+	"Nov",
+	"Dec",
+];

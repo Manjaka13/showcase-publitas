@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { GREETINGS } from "@/helpers/const";
+import { GREETINGS, DAYS, MONTHS } from "@/helpers/const";
 
 /**
  * Page cover
@@ -30,38 +30,15 @@ export const Cover = (): JSX.Element => {
 	// Updates our cover clock
 	const updateClock = (): void => {
 		const date = new Date();
-		const days = [
-			"Sunday",
-			"Monday",
-			"Tuesday",
-			"Wednesday",
-			"Thursday",
-			"Friday",
-			"Saturday",
-		];
-		const months = [
-			"Jan",
-			"Feb",
-			"Mar",
-			"Apr",
-			"Mai",
-			"Jun",
-			"Jul",
-			"Aog",
-			"Sept",
-			"Oct",
-			"Nov",
-			"Dec",
-		];
 
 		setClock({
 			hours: date.getHours() < 10 ? `0${date.getHours()}` : date.getHours(),
 			minutes:
 				date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes(),
 			date: date.getDate() < 10 ? `0${date.getDate()}` : date.getDate(),
-			month: months[date.getMonth()],
+			month: MONTHS[date.getMonth()],
 			year: date.getFullYear(),
-			day: days[date.getDay()],
+			day: DAYS[date.getDay()],
 		});
 		setTick((prev) => !prev);
 	};
@@ -80,10 +57,13 @@ export const Cover = (): JSX.Element => {
 		if (!time) time = 4;
 		setGreeting(GREETINGS[time]);
 		setBackground(time);
+
+		// Update clock every second
 		const intervalId: NodeJS.Timer = setInterval(() => {
 			updateClock();
 		}, 1000);
 
+		// Do not forget to clear
 		return () => {
 			clearInterval(intervalId);
 		};
