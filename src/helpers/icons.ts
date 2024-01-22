@@ -11,9 +11,23 @@ import {
 	faDownload,
 	faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+	faFacebook,
+	faGithub,
+	faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 // Manually add fontawesome styles
 config.autoAddCss = false;
 
 // Add icons to library
-library.add(faHeart, faStarAndCrescent, faWrench, faDownload, faEnvelope);
+library.add(
+	faHeart,
+	faStarAndCrescent,
+	faWrench,
+	faDownload,
+	faEnvelope,
+	faFacebook,
+	faGithub,
+	faLinkedin,
+);

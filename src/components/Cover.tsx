@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { GREETINGS, DAYS, MONTHS } from "@/helpers/const";
+import { Social } from "@/components/Social";
 
 /**
  * Page cover
@@ -80,6 +81,8 @@ export const Cover = (): JSX.Element => {
 				</p>
 				<div className="cover__divider"></div>
 				<p className="cover__greeting bold">{greeting}</p>
+				<button className="button cover__download">Download my resume</button>
+				<Social />
 			</div>
 		</div>
 	);

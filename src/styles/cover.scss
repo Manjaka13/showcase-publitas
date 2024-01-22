@@ -61,4 +61,13 @@
         color: rgb(212, 212, 212);
         text-shadow: 1px 1px 3px black;
     }
+
+    &__download {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        background: $color-theme;
+        margin: 20px 0;
+    }
 }

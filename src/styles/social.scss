@@ -1,0 +1,17 @@
+.social {
+    @include flex-row(center, center);
+
+    &__item {
+        @include transition;
+        margin: 0 15px;
+
+        &:hover {
+            padding-bottom: 5px;
+        }
+
+        .link {
+            font-size: 40px;
+            color: white;
+        }
+    }
+}

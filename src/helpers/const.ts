@@ -1,4 +1,5 @@
 import { NavigationLinkType } from "@/components/NavigationLinks";
+import { SocialType } from "@/components/Social";
 
 /**
  * Our constants lies here
@@ -53,4 +54,22 @@ export const MONTHS: string[] = [
 	"Oct",
 	"Nov",
 	"Dec",
+];
+
+export const SOCIAL: SocialType[] = [
+	{
+		title: "Reach me on Facebook",
+		link: "https://www.facebook.com/manjaka13",
+		icon: ["fab", "facebook"],
+	},
+	{
+		title: "See my work on Github !",
+		link: "https://github.com/manjaka13",
+		icon: ["fab", "github"],
+	},
+	{
+		title: "Check out my LinkedIn",
+		link: "https://www.linkedin.com/in/harijaona-rajaonson/",
+		icon: ["fab", "linkedin"],
+	},
 ];
