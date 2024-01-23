@@ -5,6 +5,7 @@ import "@/helpers/icons";
 import LOGO from "@/images/favicon.png";
 import { Footer } from "@/components/Footer";
 import { Cover } from "@/components/Cover";
+import { ProjectList } from "@/components/ProjectList";
 
 /**
  * Entry point
@@ -21,13 +22,7 @@ const Index = () => (
 			<Navigation />
 			<Cover />
 			<div className="container">
-				<p>
-					Esse veniam culpa officia in consectetur. Eiusmod cillum et officia elit
-					sit dolor labore ea ad nulla. Pariatur labore esse ut consequat laboris
-					exercitation velit cillum aliquip duis. Minim ullamco est incididunt
-					officia minim occaecat aliquip aliquip ullamco enim occaecat officia
-					nostrud deserunt.
-				</p>
+				<ProjectList />
 			</div>
 		</main>
 		<Footer />
