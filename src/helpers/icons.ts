@@ -10,6 +10,7 @@ import {
 	faWrench,
 	faDownload,
 	faEnvelope,
+	faExternalLink,
 } from "@fortawesome/free-solid-svg-icons";
 import {
 	faFacebook,
@@ -30,4 +31,5 @@ library.add(
 	faFacebook,
 	faGithub,
 	faLinkedin,
+	faExternalLink,
 );
