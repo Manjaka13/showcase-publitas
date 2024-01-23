@@ -1,6 +1,19 @@
 import { NavigationLinkType } from "@/components/NavigationLinks";
 import { SocialType } from "@/components/Social";
 
+import imageCss3 from "@/images/techno/css3.png";
+import imageExpress from "@/images/techno/express.png";
+import imageHtml5 from "@/images/techno/html5.png";
+import imageJavascript from "@/images/techno/javascript.png";
+import imageMongodb from "@/images/techno/mongodb.png";
+import imageNextjs from "@/images/techno/nextjs.png";
+import imageNodejs from "@/images/techno/nodejs.png";
+import imageReact from "@/images/techno/react.png";
+import imageSass from "@/images/techno/sass.png";
+import imageTypescript from "@/images/techno/typescript.png";
+import imageVuejs from "@/images/techno/vuejs.png";
+import imageWebpack from "@/images/techno/webpack.png";
+
 /**
  * Our constants lies here
  */
@@ -79,3 +92,18 @@ export const SOCIAL: SocialType[] = [
 export const DEVELOPER_NAME = "Harijaona Rajaonson";
 export const DEVELOPER_NICKNAME = "Hari";
 export const DEVELOPER_LINK = "https://harij.vercel.app/";
+
+export const TECHS = {
+	css3: imageCss3,
+	express: imageExpress,
+	html5: imageHtml5,
+	javascript: imageJavascript,
+	mongodb: imageMongodb,
+	nextjs: imageNextjs,
+	nodejs: imageNodejs,
+	react: imageReact,
+	sass: imageSass,
+	typescript: imageTypescript,
+	vuejs: imageVuejs,
+	webpack: imageWebpack,
+};
