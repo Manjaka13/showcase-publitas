@@ -32,14 +32,16 @@
 			animation: 1.5s animation-heartbeat forwards infinite;
 
 			@keyframes animation-heartbeat {
-				from {
+				0% {
 					font-size: 20px;
-					transform: rotate(2deg);
 				}
 
-				to {
+				50% {
 					font-size: 30px;
-					transform: rotate(0deg);
+				}
+
+				100% {
+					font-size: 25px;
 				}
 			}
 		}
