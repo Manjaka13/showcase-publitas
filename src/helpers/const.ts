@@ -73,3 +73,7 @@ export const SOCIAL: SocialType[] = [
 		icon: ["fab", "linkedin"],
 	},
 ];
+
+export const DEVELOPER_NAME = "Harijaona Rajaonson";
+export const DEVELOPER_NICKNAME = "Hari";
+export const DEVELOPER_LINK = "https://harij.vercel.app/";
