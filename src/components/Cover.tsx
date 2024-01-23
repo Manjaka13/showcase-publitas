@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { GREETINGS, DAYS, MONTHS } from "@/helpers/const";
+import { GREETINGS } from "@/helpers/const";
 import { Social } from "@/components/Social";
+import { getNow } from "@/helpers/utils";
 
 /**
  * Page cover
@@ -19,28 +20,11 @@ export const Cover = (): JSX.Element => {
 	const [tick, setTick] = useState<boolean>(true);
 	const [greeting, setGreeting] = useState<string>(GREETINGS[0]);
 	const [background, setBackground] = useState<number>(0);
-	const [clock, setClock] = useState<ClockType>({
-		hours: "xx",
-		minutes: "xx",
-		date: "xx",
-		month: "Jan",
-		year: 2024,
-		day: "22",
-	});
+	const [clock, setClock] = useState<ClockType>(getNow());
 
 	// Updates our cover clock
 	const updateClock = (): void => {
-		const date = new Date();
-
-		setClock({
-			hours: date.getHours() < 10 ? `0${date.getHours()}` : date.getHours(),
-			minutes:
-				date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes(),
-			date: date.getDate() < 10 ? `0${date.getDate()}` : date.getDate(),
-			month: MONTHS[date.getMonth()],
-			year: date.getFullYear(),
-			day: DAYS[date.getDay()],
-		});
+		setClock(getNow());
 		setTick((prev) => !prev);
 	};
 
