@@ -10,11 +10,16 @@ export interface NavigationLinkType {
 	title: string;
 	name: string;
 	icon: IconProp;
+	link?: string;
 }
 
 const mappedLinks: JSX.Element[] = NAVIGATION_LINKS.map((item) => (
 	<li className="navigation-link__item" key={item.name}>
-		<a className="link regular" href="#0" title={item.title}>
+		<a
+			className="link regular"
+			href={item.link ? item.link : "#0"}
+			title={item.title}
+		>
 			<FontAwesomeIcon icon={item.icon} /> {item.name}
 		</a>
 	</li>

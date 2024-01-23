@@ -10,11 +10,13 @@ export const NAVIGATION_LINKS: NavigationLinkType[] = [
 		title: "Check out my works",
 		name: "My work",
 		icon: "wrench",
+		link: "#project-list",
 	},
 	{
 		title: "Get in touch",
 		name: "Contacts",
 		icon: "envelope",
+		link: "#contacts",
 	},
 	{
 		title: "Download my resume",
