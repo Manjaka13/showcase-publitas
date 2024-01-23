@@ -6,7 +6,9 @@
         margin: 0 15px;
 
         &:hover {
-            padding-bottom: 5px;
+            .link {
+                color: $color-theme2;
+            }
         }
 
         .link {
