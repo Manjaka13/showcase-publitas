@@ -17,3 +17,9 @@ export const getNow = (): ClockType => {
 		day: DAYS[date.getDay()],
 	};
 };
+
+// Capitalize first letter
+export const capitalizeFirst = (str: string): string => {
+	const strArr = str.split("");
+	return `${strArr[0].toUpperCase()}${str.slice(1, str.length).toLowerCase()}`;
+};
